@@ -22,24 +22,28 @@ $(document).on("ready", function () {
 		$(".btn-crust").toggleClass("active");
 	});
 
-
 	$('.btn').on('click', function(){
 	var total = 10;
 	$(".toppings").empty()
 
 	if($('.btn-pepperonni').hasClass('active')){
+		$(".toppings").append("<li>$1 pepperonnis</li>")
 		total += 1;
 	}
 	if($('.btn-mushrooms').hasClass('active')){
+		$(".toppings").append("<li>$1 mushrooms</li> ")
 		total += 1;
 	}
 	if($('.btn-green-peppers').hasClass('active')){
+		$(".toppings").append("<li>$1 green peppers</li>")
 		total += 1;
 	}
 	if($('.btn-crust').hasClass('active')){
+		$(".toppings").append("<li>$5 Gluten free crust</li>")
 		total += 5;
 	}
 	if($('.btn-sauce').hasClass('active')){
+		$(".toppings").append("<li>$3 White sause</li>")
 		total += 3;
 	};
 	$('strong').empty();
