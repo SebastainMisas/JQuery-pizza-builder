@@ -155,22 +155,4 @@ $10 cheese pizza
 $14
 ```
 
-When an ingredient changes, how will you know which element to hide?
 
-
-### The Competing Pizza Builder ###
-
-If you aren't sure how something should work,
-you can try to reverse engineer
-[the competition's pizza builder](https://khalifenizar.github.io/pizza-builder).
-They had enough money to get their pizza builder's JavaScript,
-but they don't deliver to Ironhack.
-Screw _that_ pizzeria!
-
-Anyway the URL is: https://khalifenizar.github.io/pizza-builder.
-
-
-License
--------
-
-ISC © [Nizar Khalife Iglesias](https://twitter.com/khalifenizar)
