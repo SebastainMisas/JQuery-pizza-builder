@@ -21,4 +21,28 @@ $(document).on("ready", function () {
 
 		$(".btn-crust").toggleClass("active");
 	});
+
+
+	$('.btn').on('click', function(){
+	var total = 10;
+	$(".toppings").empty()
+
+	if($('.btn-pepperonni').hasClass('active')){
+		total += 1;
+	}
+	if($('.btn-mushrooms').hasClass('active')){
+		total += 1;
+	}
+	if($('.btn-green-peppers').hasClass('active')){
+		total += 1;
+	}
+	if($('.btn-crust').hasClass('active')){
+		total += 5;
+	}
+	if($('.btn-sauce').hasClass('active')){
+		total += 3;
+	};
+	$('strong').empty();
+	$('strong').append("$ " + total);
+});
 });
